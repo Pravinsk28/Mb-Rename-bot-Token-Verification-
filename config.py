@@ -4,19 +4,19 @@ import time
 from os import environ
 
 # Shortlink API configuration
-API = environ.get("API", "d92f120bd61ee18e32d4a5e4f4cfad8d747eeec4") # shortlink api
-URL = environ.get("URL", "publicearn.com") # shortlink domain without https://
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
-BOT_USERNAME = environ.get("BOT_USERNAME", "AniflixAutoFilterBot") # bot username without @
+API = environ.get("API", "5846ff3a30d0634b456cb04867154032a7574eac") # shortlink api
+URL = environ.get("URL", "Modijiurl.com") # shortlink domain without https://
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/moviesblaster_linkz/9") # how to open link 
+BOT_USERNAME = environ.get("BOT_USERNAME", "MB_rename_bot") # bot username without @
 VERIFY = environ.get("VERIFY", "True") == "True"  # Convert string to boolean
 
 id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID = os.environ.get("API_ID", "25198711")  # ⚠️ Required
-    API_HASH = os.environ.get("API_HASH", "2a99a1375e26295626c04b4606f72752")  # ⚠️ Required
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7393513769:AAGRttVn6-EXPI5GdRpeepDpXjnnU_ukqME")  # ⚠️ Required
+    API_ID = os.environ.get("API_ID", "28987210")  # ⚠️ Required
+    API_HASH = os.environ.get("API_HASH", "04f69b63570297dac4e35948e4c6b4b7")  # ⚠️ Required
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7819649400:AAHrXcfn6Wb6gLAU12ASyqf0q6TktsSFH7M")  # ⚠️ Required
 
     # premium 4g renaming client
     STRING_API_ID = os.environ.get("STRING_API_ID", "")
@@ -24,17 +24,17 @@ class Config(object):
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME", "Aniflix")
-    DB_URL = os.environ.get("DB_URL", "mongodb+srv://Aniflix:Lipun123@aniflix.q2wina5.mongodb.net/?retryWrites=true&w=majority&appName=Aniflix")  # ⚠️ Required
+    DB_NAME = os.environ.get("DB_NAME", "Cluster0")
+    DB_URL = os.environ.get("DB_URL", "mongodb+srv://Pravin:944244@cluster0.qe3bn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")  # ⚠️ Required
 
     # other configs
     BOT_UPTIME = time.time()
     START_PIC = os.environ.get("START_PIC", "https://graph.org/file/9c910cbc74144b3b2efce.jpg")
     ADMIN = [int(admin) if id_pattern.search(
-        admin) else admin for admin in os.environ.get('ADMIN', '1740287480').split()]  # ⚠️ Required
+        admin) else admin for admin in os.environ.get('ADMIN', '5239080571').split()]  # ⚠️ Required
     
-    FORCE_SUB = os.environ.get("FORCE_SUB", "aniflixClou") # ⚠️ Required Username without @
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002219568827"))  # ⚠️ Required
+    FORCE_SUB = os.environ.get("FORCE_SUB", "moviesblaster_linkz/9") # ⚠️ Required Username without @
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002474879896"))  # ⚠️ Required
     FLOOD = int(os.environ.get("FLOOD", '105'))
     BANNED_USERS = set(int(x) for x in os.environ.get(
         "BANNED_USERS", "1234567890").split())
