@@ -7,7 +7,7 @@ from os import environ
 API = environ.get("API", "5846ff3a30d0634b456cb04867154032a7574eac") # shortlink api
 URL = environ.get("URL", "Modijiurl.com") # shortlink domain without https://
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/moviesblaster_linkz/9") # how to open link 
-BOT_USERNAME = environ.get("BOT_USERNAME", "MB_rename_bot") # bot username without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "mb_rename_bot") # bot username without @
 VERIFY = environ.get("VERIFY", "True") == "True"  # Convert string to boolean
 
 id_pattern = re.compile(r'^.\d+$')
